@@ -21,10 +21,11 @@ leap_year(2019)
 leap_year(2020)
 #третья задача
 
-day = input('Введите день')
-month = input('Введите месяц')
+day = int(input('Введите день'))
+month = int(input('Введите месяц'))
 
-if (day>=21 and day<=31 and month==3) or( month==4 and day>=1 and day<=19):
+
+if (day >= 21 and day<=31 and month==3) or( month==4 and day>=1 and day<=19):
 
    print("Знак зодиака:Овен")
 
@@ -74,8 +75,20 @@ elif (day>=19 and day<=29 and month==2) or( month==3 and day>=1 and day<=20):
 
 #четвертое задание
 
+width = 10
+length = 205
+height = 5
 
+if (width < 15 and length < 15 and height < 15):
+    print('Коробка №1')
+elif (width > 15 and width < 50) or (length > 15 and length < 50) or (height > 15 and height < 50):
+    print('Коробка №2')
+elif length > 200:
+    print('Упаковка для лыж')
+else:
+    print('Стандартная упаковка')
 
+#пятое задание
 
 
 
