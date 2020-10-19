@@ -114,6 +114,24 @@ def lucky_ticket(number):
 
 lucky_ticket(number)
 
+#шестое задание
+
+form = input('Фигура: ')
+
+if form == 'Круг':
+  radius = int(input('Радиус'))
+  print(f'Площадь круга: {radius ** 2 * 3.14}')
+elif form == 'Треугольник':
+  a_side = int(input('Введите длину стороны A'))
+  b_side = int(input('Введите длину стороны B'))
+  c_side = int(input('Введите длину стороны C'))
+  print(f'Площадь треугольника: {(a_side + b_side + c_side)/2}')
+elif form == 'Прямоугольник':
+  a_side = int(input('Введите длину стороны A'))
+  b_side = int(input('Введите длину стороны B'))
+  print(f'Площадь прямоугольника: {a_side * b_side}')
+  
+
 
 
 
