@@ -13,7 +13,16 @@ char('tesyt')
 
 #2 задание
 
+user_input_sum = 0
 
+while True:
+    user_input = int(input('Введите число: '))
+    
+    if user_input != 0:
+       user_input_sum += user_input
+       pass
+    else:
+        print (f'Результат: {user_input_sum}')
 
 
 
