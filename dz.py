@@ -1,12 +1,17 @@
-phrase_1 = 'Насколько проще было бы писать программы, если бы не заказчики'
-phrase_2 = '640Кб должно хватить для любых задач. Билл Гейтс (по легенде)'
+# 1 задание
 
-if len(phrase_1) > len(phrase_2):
-    print('1 длиннее фразы 2')
-elif len(phrase_1) < len(phrase_2):
-    print('2 длиннее фразы 1')
-else:
-    print('Фразы равной длины')
+def char(word):
+  length = len(word)
+  middle = round(length/2)
+  print(middle)
+  if length % 2 == 0:
+    print(word[(middle - 1): (middle + 1)])
+  else:
+    print(word[middle])
+
+char('tesyt')
+
+#2 задание
 
 
 
