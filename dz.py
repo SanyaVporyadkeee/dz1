@@ -90,6 +90,30 @@ else:
 
 #пятое задание
 
+number = 123456
+
+
+def lucky_ticket(number):
+  num = str(number)
+  length = len(num) - 1
+  sum_1 = 0
+  sum_2 = 0
+  i = 0
+  while i <= length:
+    current_value = int(num[i])
+    if i <= (length/2):
+      sum_1 += current_value
+      print(sum_1)
+    else:
+      sum_2 += current_value
+    i += 1 
+  if sum_1 == sum_2:
+    print('Счастливый')
+  else:
+    print('Несчастливый')
+
+lucky_ticket(number)
+
 
 
 
