@@ -24,6 +24,20 @@ while True:
     else:
         print (f'Результат: {user_input_sum}')
 
+#3 задание
+
+boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
+girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
+
+if len(boys) == len(girls):
+  result = zip(sorted(boys), sorted(girls))
+  li = list(result)
+  print('Идеальные пары: ')
+  for element in li:
+       print(f'{element[0]} и {element[1]}')
+else:
+  print('Не всем хватает пары')
+
 
 
 
