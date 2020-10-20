@@ -61,6 +61,26 @@ def f_to_c(number):
 for country in countries_temperature:
   print(f' {country[0]} - ' + str(f_to_c(average_number(country[1]))))
 
+#5 задание
+
+stream = [
+'2018-01-01,user100,150',
+'2018-01-07,user99,205',
+'2018-03-29,user1001,81'
+]
+
+length = len(stream)
+sum = 0
+for elem in stream:
+  current = elem.split(',')
+  sum += int(current[2])
+  result = sum / length
+print(round(result, 1))
+
+
+
+
+
 
 
 
