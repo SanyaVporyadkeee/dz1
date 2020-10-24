@@ -35,6 +35,24 @@ percent_2 = round((sum_2/len(new_list)) * 100, 2)
 
 print(f'Поисковых запросов, содержащих 2 слов(а): {percent_2} %\nПоисковых запросов, содержащих 3 слов(а): {percent_3} %')
 
+# 3 задание
+
+results = {
+'vk': {'revenue': 103, 'cost': 98},
+'yandex': {'revenue': 179, 'cost': 153},
+'facebook': {'revenue': 103, 'cost': 110},
+'adwords': {'revenue': 35, 'cost': 34},
+'twitter': {'revenue': 11, 'cost': 24},
+}
+roi = 0
+for key, value in results.items():
+  roi = {'ROI' : round((value['revenue'] / value['cost'] - 1) * 100, 2)}
+  results[key].update(roi)
+
+print(results) 
+
+
+
 
 
 
