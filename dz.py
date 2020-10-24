@@ -51,6 +51,15 @@ for key, value in results.items():
 
 print(results) 
 
+#4 задание
+
+stats = {'facebook': 55, 'yandex': 115, 'vk': 120, 'google': 99, 'email': 42, 'ok': 98}
+
+max_val = max(stats.values())
+for key, value in stats.items():
+  if value == max_val:
+    print(f'Максимальный объем продаж на рекламном канале: {key}')
+
 
 
 
