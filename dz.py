@@ -12,7 +12,6 @@ for elem in ids_set:
 print(res)
 
 # 2 задание
-
 queries = [
 'смотреть сериалы онлайн',
 'новости спорта',
@@ -23,17 +22,20 @@ queries = [
 'сериалы про спорт',
 ]
 
-new_list = []
+def count_word(li):
+    new_li = []
+    d = {}
+    current_len = 0
+    current_amount = 0
+    for i in li:
+        current_len = len(i.split())
+        new_li.append(current_len)
+        if type(i) == str and i != "":
+          if current_len not in d:
+            d[f"Поисковых запросов, содержащих {current_len} слов(а)"] = f"{round(((new_li.count(current_len))/len(li)) * 100, 2)}%"
+    print(d) 
 
-for elem in queries:
-  new_list.append(len(elem.split(' ')))
-
-sum_3 = new_list.count(3)
-sum_2 = new_list.count(2)
-percent_3 = round((sum_3/len(new_list)) * 100, 2)
-percent_2 = round((sum_2/len(new_list)) * 100, 2)
-
-print(f'Поисковых запросов, содержащих 2 слов(а): {percent_2} %\nПоисковых запросов, содержащих 3 слов(а): {percent_3} %')
+count_word(queries)
 
 # 3 задание
 
